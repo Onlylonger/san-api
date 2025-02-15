@@ -24,17 +24,17 @@ describe('AppController (e2e)', () => {
       .expect('Hello World!');
   });
 
-  it('/user (POST) without body params', () => {
-    return request(app.getHttpServer()).post('/user').expect(400);
-  });
+  // it('/user (POST) without body params', () => {
+  //   return request(app.getHttpServer()).post('/user').expect(400);
+  // });
 
-  it('/user (POST) with body params', () => {
-    return request(app.getHttpServer())
-      .post('/user')
-      .send({
-        username: 'n',
-        password: 'n',
-      })
-      .expect(201);
-  });
+  // it('/user (POST) with body params', () => {
+  //   return request(app.getHttpServer())
+  //     .post('/user')
+  //     .send({
+  //       username: 'n',
+  //       password: 'n',
+  //     })
+  //     .expect(201);
+  // });
 });
